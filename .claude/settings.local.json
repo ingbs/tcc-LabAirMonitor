@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\ingrid.souza\\\\AndroidStudioProjects\\\\LabAirMonitor\\\\\" -Recurse | ForEach-Object { $_.FullName } | Select-Object -First 80)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\ingrid.souza\\\\AndroidStudioProjects\\\\LabAirMonitor\\\\app\\\\src\\\\\" -Recurse | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem -Recurse -File \"C:\\\\Users\\\\ingrid.souza\\\\AndroidStudioProjects\\\\LabAirMonitor\" | Where-Object { $_.Extension -in @\\('.kt', '.xml'\\) } | Select-Object FullName | Sort-Object FullName)"
+    ]
+  }
+}
